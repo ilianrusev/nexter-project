@@ -9,6 +9,16 @@
     [center-end]
     minmax(6rem, 1fr)
     [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr)
+      [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end]
+      minmax(6rem, 1fr)
+      [full-end];
+  }
 }
 
 .sidebar {
@@ -17,6 +27,13 @@
   grid-row: 1 / -1;
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
   &__btn {
     border: none;
@@ -41,6 +58,19 @@
 
     &::after {
       transform: translateY(1.3rem);
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 0;
+      margin-right: 3rem;
+
+      &::before {
+        transform: translateY(-1.2rem);
+      }
+
+      &::after {
+        transform: translateY(1rem);
+      }
     }
   }
 }
