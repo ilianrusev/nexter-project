@@ -19,6 +19,13 @@
       minmax(6rem, 1fr)
       [full-end];
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content 40vw repeat(
+        3,
+        min-content
+      );
+  }
 }
 
 .sidebar {
@@ -94,6 +101,10 @@
   grid-row-gap: 1.5rem;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+  }
+
   &__logo {
     height: 3rem;
     justify-self: center;
@@ -147,12 +158,20 @@
   justify-items: center;
   grid-row-gap: 2rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
   }
 
   &__img {
