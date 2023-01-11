@@ -7,9 +7,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RealtorsComponent } from './components/realtors/realtors.component';
+import { FeaturesComponent } from './components/features/features.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SidebarComponent, HeaderComponent, RealtorsComponent],
+  declarations: [AppComponent, HomeComponent, SidebarComponent, HeaderComponent, RealtorsComponent, FeaturesComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

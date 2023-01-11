@@ -1,0 +1,9 @@
+<div *ngFor="let feature of features" class="feature">
+  <svg class="feature__icon">
+    <use [attr.xlink:href]="feature.icon"></use>
+  </svg>
+  <h4 class="heading-4 heading-4--dark">{{ feature.heading }}</h4>
+  <p class="feature__text">
+    {{ feature.text }}
+  </p>
+</div>
