@@ -10,9 +10,10 @@ import { RealtorsComponent } from './components/realtors/realtors.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { HomesComponent } from './components/homes/homes.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SidebarComponent, HeaderComponent, RealtorsComponent, FeaturesComponent, HomesComponent, GalleryComponent],
+  declarations: [AppComponent, HomeComponent, SidebarComponent, HeaderComponent, RealtorsComponent, FeaturesComponent, HomesComponent, GalleryComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
