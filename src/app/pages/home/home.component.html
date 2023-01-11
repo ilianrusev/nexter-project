@@ -24,14 +24,7 @@
 
   <app-homes></app-homes>
 
-  <section class="gallery">
-    <figure
-      *ngFor="let pic of gallery; let i = index"
-      class="gallery__item gallery__item--{{ i + 1 }}"
-    >
-      <img src="{{ pic.src }}" alt="gal{{ i + 1 }}" class="gallery__img" />
-    </figure>
-  </section>
+  <app-gallery></app-gallery>
 
   <footer class="footer">
     <ul class="nav">

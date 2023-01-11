@@ -1,0 +1,6 @@
+<figure
+  *ngFor="let pic of gallery; let i = index"
+  class="gallery__item gallery__item--{{ i + 1 }}"
+>
+  <img src="{{ pic.src }}" alt="gal{{ i + 1 }}" class="gallery__img" />
+</figure>
